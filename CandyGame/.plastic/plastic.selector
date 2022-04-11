@@ -1,0 +1,4 @@
+repository "CandyGame@GamingTown@cloud"
+  path "/"
+    br "/main"
+    co "/main"
