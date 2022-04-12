@@ -4909,33 +4909,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f231c15bd0897443910f06026d38465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CannonButton: {fileID: 733760446}
-  CannonPrize: 15
-  ShieldButton: {fileID: 1755000908}
-  ShieldPrize: 30
-  LaserButton: {fileID: 682921655}
-  LaserPrize: 65
-  UpgradeButton: {fileID: 989605831}
-  UpgradePrize: 40
-  moneyText: {fileID: 1910894551}
-  basicTurretPrefab: {fileID: 3623564692086984731, guid: f35de91f49053ae4292de5d14ccd3dba, type: 3}
-  laserTurretPrefab: {fileID: 2739884942640391862, guid: fafbe8ca7b459fc45a5b815371bbfaa7, type: 3}
-  shieldTurretPrefab: {fileID: 3900759597801205196, guid: 22b123d058a317d4d890f362ba4f5bf7, type: 3}
-  buttonHolder: {fileID: 196409276}
-  center: {fileID: 173105171}
-  planet: {fileID: 1338699556}
-  radius: 3.8
-  Money: 20
-  TurretSpawnPoint: {fileID: 1056182012}
-  turretNumber: 0
-  activated: 0
-  activatedOnce: 0
-  startMoney: 20
-  levelUpText: {fileID: 1938016869}
-  HealthText: {fileID: 859941651}
-  upgradePrizeText: {fileID: 583124123}
-  turretBuild: {fileID: 1209964280}
-  upgradeSound: {fileID: 1209964279}
 --- !u!4 &1209964278
 Transform:
   m_ObjectHideFlags: 0
@@ -5376,11 +5349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7649fcf299529e340967fd7caac6fcbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 75
-  activated: 0
-  Health: 10
-  healthText: {fileID: 859941651}
-  damageSound: {fileID: 1338699559}
 --- !u!58 &1338699558
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5527,12 +5495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae05df722595e3d469851a75de4afeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 30
-  center: {fileID: 173105171}
-  po: {fileID: 1209964277}
-  bx: {fileID: 0}
-  scrapCollectAudio: {fileID: 2104139352}
-  activated: 0
 --- !u!212 &1375748839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6049,15 +6011,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c09dfe3679e4c4d8f1a5a68569943b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreas:
-  - {fileID: 2048996451}
-  - {fileID: 881293767}
-  - {fileID: 1467749094}
-  - {fileID: 2133530220}
-  spawnArea: {fileID: 0}
-  movementBox: {fileID: 1678305988}
-  enemyPrefab: {fileID: 7751696871697950699, guid: 2a8a7e344db56e24888bb426d0e5be82, type: 3}
-  activated: 0
 --- !u!4 &1530224873
 Transform:
   m_ObjectHideFlags: 0
@@ -6178,47 +6131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703b49dd5d3880d4c9e2b6beff19a22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayAmbience: {fileID: 2083668547}
-  nightAmbience: {fileID: 1453742221}
-  cannonSound: {fileID: 250322568}
-  laserSound: {fileID: 946183040}
-  PlanetDay: {fileID: 21300000, guid: bdd2234b78cf1be408b9fe33ef07f252, type: 3}
-  PlanetNight: {fileID: 21300000, guid: 0f342c3b5efcb294fa65a4cc2afdf02e, type: 3}
-  BackGroundDay: {fileID: 21300000, guid: 691471022c3d3884bbd48c1553ca3bd5, type: 3}
-  BackGroundNight: {fileID: 21300000, guid: d340d54a9272cb0449e11b790c41f8f5, type: 3}
-  BackGround: {fileID: 2021751813}
-  houseDay: {fileID: 21300000, guid: efcc6e251bcd3424bbf311c4176c2bf2, type: 3}
-  houseBuy: {fileID: 21300000, guid: db3f98dfa343a6e48883a1d7e3bc4110, type: 3}
-  houseNight: {fileID: 21300000, guid: 7fcd0663e7b0c694593432700e7b6dc1, type: 3}
-  houseSR: {fileID: 1093222849}
-  MaxHealth: 8
-  po: {fileID: 1209964277}
-  es: {fileID: 1530224872}
-  btA: []
-  house: {fileID: 1093222850}
-  btBulletSpeed: 35
-  ltA: []
-  ltShootTime: 1
-  shootTimer: 3
-  shootTimerR: 0
-  dayState: 0
-  buyState: 0
-  nightState: 0
-  lvl: 1
-  cycle: 1
-  lvlText: {fileID: 1970850558}
-  cycleText: {fileID: 665195616}
-  timerText: {fileID: 1157666884}
-  mainMenu: {fileID: 2045419378}
-  miscUI: {fileID: 1196469547}
-  gameTimer: 0
-  eShootTime: 5
-  eMaxRotSpeed: 40
-  eMinRotSpeed: 25
-  eAmountMax: 2
-  eAmountMin: 1
-  eSpawnTimerMin: 5
-  eSpawnTimerMax: 9
 --- !u!1 &1755000906
 GameObject:
   m_ObjectHideFlags: 0
@@ -6810,6 +6722,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773986590}
   m_CullTransparentMesh: 1
+--- !u!1 &1852301609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1852301611}
+  - component: {fileID: 1852301610}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1852301610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852301609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52dd073d1b1107c428cbf5283423ae7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentGameState: 0
+--- !u!4 &1852301611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852301609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1665399, y: 0.3634045, z: -0.24618196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1881672046
 GameObject:
   m_ObjectHideFlags: 0
