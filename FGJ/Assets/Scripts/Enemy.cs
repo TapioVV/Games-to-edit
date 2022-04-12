@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
         gm = FindObjectOfType<GameManager>();
 
         shootTime = gm.eShootTime;
-        rotateSpeedMax = gm.eMaxRotSpeed;
+        rotateSpeedMax = gm.enemyMaxRotationSpeed;
         rotateSpeedMin = gm.eMinRotSpeed;
 
         anim = GetComponent<Animator>();

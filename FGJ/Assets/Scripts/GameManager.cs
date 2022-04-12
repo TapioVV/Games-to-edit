@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Enemy")]
     public float eShootTime;
-    public float eMaxRotSpeed;
+    public float enemyMaxRotationSpeed;
     public float eMinRotSpeed;
     public int eAmountMax;
     public int eAmountMin;
@@ -166,9 +166,9 @@ public class GameManager : MonoBehaviour
                 cycle += 1;
                 gameTimer = dayTimer;
                 DayState();
-                if(eMaxRotSpeed < 80)
+                if(enemyMaxRotationSpeed < 80)
                 {
-                    eMaxRotSpeed += 2.5f;
+                    enemyMaxRotationSpeed += 2.5f;
                     eMinRotSpeed += 2.5f;
                 }
                 if(eSpawnTimerMax > 4.5f)
