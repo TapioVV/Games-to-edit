@@ -56,7 +56,6 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.AddForce(Vector3.zero - transform.position, ForceMode2D.Impulse);
     }
-
     void Update()
     {
         if(canDie == true)
@@ -112,7 +111,6 @@ public class Enemy : MonoBehaviour
             Rotate();
         }
     }
-
     void ChangeRadius()
     {
         toggleDir = !toggleDir;
@@ -120,7 +118,6 @@ public class Enemy : MonoBehaviour
 
         DOTween.To(() => radiusChangeNumber, x => radiusChangeNumber = x, 0, 1).OnComplete(MoveOrRotate).OnUpdate(ActuallyMove).SetId(myId);
     }
-
     void ActuallyMove()
     {
         if (toggleDir == false)
@@ -132,7 +129,6 @@ public class Enemy : MonoBehaviour
             transform.position += transform.up * 5 * Time.deltaTime;
         }       
     }
-
     void Rotate()
     {
         float rotateTimer = Random.Range(1, 4);
@@ -142,7 +138,6 @@ public class Enemy : MonoBehaviour
 
         DOTween.To(() => rotateNumber, x => rotateNumber = x, 0, rotateTimer).OnComplete(MoveOrRotate).OnUpdate(ActuallyRotate).SetId(myId);
     }
-
     void ActuallyRotate()
     {
         if (randomDir == 0)
@@ -154,7 +149,6 @@ public class Enemy : MonoBehaviour
             transform.RotateAround(moveArea.bounds.center, Vector3.forward, rotateSpeed * Time.deltaTime);
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {       
         if(collision.gameObject.tag == "CenterArea" && canCollide == true && canDie == true)
@@ -175,7 +169,6 @@ public class Enemy : MonoBehaviour
             Die();
         }      
     }
-
     void Die()
     {
         StopAllTweens();
@@ -187,5 +180,6 @@ public class Enemy : MonoBehaviour
     public void DestroyThis()
     {
         Destroy(gameObject);
-    }    
+    }
+    
 }

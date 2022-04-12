@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioSource cannonSound;
     [SerializeField] AudioSource laserSound;
 
+
+
     [SerializeField] Sprite PlanetDay;
     [SerializeField] Sprite PlanetNight;
     [SerializeField] Sprite BackGroundDay;
@@ -60,6 +62,7 @@ public class GameManager : MonoBehaviour
     float buyTimer = 15;
     float nightTimer = 30;
 
+
     [Header("Enemy")]
     public float eShootTime;
     public float eMaxRotSpeed;
@@ -68,7 +71,7 @@ public class GameManager : MonoBehaviour
     public int eAmountMin;
     public float eSpawnTimerMin;
     public float eSpawnTimerMax;
-            
+
 
     void Start()
     {
@@ -85,7 +88,6 @@ public class GameManager : MonoBehaviour
         gameTimer = dayTimer;
         miscUI.SetActive(true);
     }
-
     public void QuitGame()
     {
         Application.Quit();
@@ -158,7 +160,6 @@ public class GameManager : MonoBehaviour
             nightAmbience.volume = 0.1f;
 
             NightState();
-
             if (gameTimer <= 0)
             {
                 player.transform.position = house.position;
@@ -221,7 +222,6 @@ public class GameManager : MonoBehaviour
 
         es.activated = false;
     }
-
     void NightState()
     {
         dayState = false;

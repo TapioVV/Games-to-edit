@@ -13,8 +13,8 @@ public class Shield : MonoBehaviour
     [SerializeField] AudioSource deactivateSound;
     [SerializeField] AudioSource activateSound;
 
-    bool soundPlayed;
 
+    bool soundPlayed;
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();

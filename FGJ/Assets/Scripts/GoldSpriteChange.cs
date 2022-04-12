@@ -22,7 +22,8 @@ public class GoldSpriteChange : MonoBehaviour
         sprites = new Sprite[] { s1, s2, s3, s4, s5, s6 };
 
         int randomSprite = Random.Range(0, 6);
-    
+        Debug.Log(randomSprite);
+
         sr.sprite = sprites[randomSprite];
     }
 }
