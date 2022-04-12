@@ -17,7 +17,6 @@ public class PlaceObject : MonoBehaviour
     GameManager gm;
     Planet planetObj;
 
-
     [SerializeField] TMP_Text moneyText;
     [SerializeField] BasicTurret basicTurretPrefab;
     [SerializeField] LaserTurret laserTurretPrefab;
@@ -49,6 +48,7 @@ public class PlaceObject : MonoBehaviour
 
     [SerializeField] AudioSource turretBuild;
     [SerializeField] AudioSource upgradeSound;
+
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
@@ -133,6 +133,7 @@ public class PlaceObject : MonoBehaviour
             UpgradeButton.enabled = true;
         }
     }
+
     public void DisableButtons()
     {
         TurretSpawnPoint.GetComponent<SpriteRenderer>().enabled = true;
@@ -143,6 +144,7 @@ public class PlaceObject : MonoBehaviour
     {
         turretNumber = tNumber;
     }
+
     void SpawnTurret()
     {
         if (turretNumber == 1)
@@ -177,10 +179,12 @@ public class PlaceObject : MonoBehaviour
         gm.MaxHealth += 4;
         levelUpText.DOFade(1, 0.5f).OnComplete(FadeBack);
     }
+
     void FadeBack()
     {
         levelUpText.DOFade(0, 0.5f);
     }
+
     void rotateSpawnPoint()
     {
         Vector3 orbVector = Camera.main.WorldToScreenPoint(center.position);
