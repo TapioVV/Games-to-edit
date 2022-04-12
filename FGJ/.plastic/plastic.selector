@@ -1,4 +1,0 @@
-repository "FGJ@GamerTown@cloud"
-  path "/"
-    br "/main"
-    co "/main"

@@ -9,6 +9,7 @@ public class ShieldTurret : MonoBehaviour
     SpriteRenderer sr;
 
     GameManager gm;
+
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
