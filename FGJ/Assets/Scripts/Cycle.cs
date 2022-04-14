@@ -5,6 +5,8 @@ using TMPro;
 
 public class Cycle : MonoBehaviour
 {
+    public delegate void AlienPlayerActivate();
+
     public StateMachine cycleStateMachine;
     public DayState dayState;
     public BuyState buyState;
