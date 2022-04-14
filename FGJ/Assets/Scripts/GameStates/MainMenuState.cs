@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DayState : State
+public class MainMenuState : State
 {
-    public DayState(Cycle cycle, StateMachine stateMachine) : base(cycle, stateMachine)
+    public MainMenuState(Cycle cycle, StateMachine stateMachine) : base(cycle, stateMachine)
     {
 
     }
@@ -12,13 +12,14 @@ public class DayState : State
     public override void Enter()
     {
         base.Enter();
+        cycle.mainMenuObject.SetActive(true);
         cycle.backGroundSpriteRenderer.sprite = cycle.backGroundSpriteDay;
     }
 
     public override void Exit()
     {
         base.Exit();
-
+        cycle.mainMenuObject.SetActive(false);
     }
 
     public override void HandleInput()
@@ -30,9 +31,5 @@ public class DayState : State
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            stateMachine.ChangeState(cycle.buyState);
-        }
     }
 }

@@ -1,6 +1,4 @@
-﻿using UnityEngine.UI;
-
-public abstract class State
+﻿public abstract class State
 {
     protected StateMachine stateMachine;
     protected Cycle cycle;

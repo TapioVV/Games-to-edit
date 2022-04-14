@@ -30,6 +30,9 @@ public class BuyState : State
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            stateMachine.ChangeState(cycle.nightState);
+        }
     }
 }
