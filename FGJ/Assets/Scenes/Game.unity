@@ -4443,7 +4443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093222848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.052, z: 0}
+  m_LocalPosition: {x: 0, y: 4.254, z: 0}
   m_LocalScale: {x: 0.3182701, y: 0.41772953, z: 0.3182701}
   m_Children: []
   m_Father: {fileID: 1338699556}
@@ -5351,11 +5351,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1375748840}
   - component: {fileID: 1375748839}
-  - component: {fileID: 1375748838}
   - component: {fileID: 1375748842}
   - component: {fileID: 1375748841}
   - component: {fileID: 1375748843}
   - component: {fileID: 1375748844}
+  - component: {fileID: 1375748838}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5372,7 +5372,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1375748837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae05df722595e3d469851a75de4afeec, type: 3}
+  m_Script: {fileID: 11500000, guid: adfc60396facb4449b5a3adff099bede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &1375748839
@@ -5434,7 +5434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375748837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.052, z: 0}
+  m_LocalPosition: {x: 0, y: 4.04, z: 0}
   m_LocalScale: {x: 0.16287299, y: 0.2137708, z: 0.16287299}
   m_Children:
   - {fileID: 2104139353}
@@ -5475,7 +5475,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375748837}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5525,7 +5525,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

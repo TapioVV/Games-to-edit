@@ -6,7 +6,6 @@ public class NightState : State
 {
     public NightState(Cycle cycle, StateMachine stateMachine) : base(cycle, stateMachine)
     {
-
     }
 
     public override void Enter()

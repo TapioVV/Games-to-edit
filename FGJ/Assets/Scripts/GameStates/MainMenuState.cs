@@ -6,7 +6,6 @@ public class MainMenuState : State
 {
     public MainMenuState(Cycle cycle, StateMachine stateMachine) : base(cycle, stateMachine)
     {
-
     }
 
     public override void Enter()

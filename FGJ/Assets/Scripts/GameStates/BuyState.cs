@@ -6,7 +6,6 @@ public class BuyState : State
 {
     public BuyState(Cycle cycle, StateMachine stateMachine) : base(cycle, stateMachine)
     {
-
     }
 
     public override void Enter()
